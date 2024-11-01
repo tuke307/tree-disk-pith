@@ -5,7 +5,7 @@ from typing import Tuple, Optional, List
 
 from src.geometry.primitives import Line
 from src.visualization.color import Color
-from src.optimization.line_intersection_solver import LeastSquaresSolution
+from src.optimization.least_squares_solver import LeastSquaresSolution
 
 
 def compute_intersection_with_block_boundaries(

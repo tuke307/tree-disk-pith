@@ -6,10 +6,11 @@ from pathlib import Path
 from typing import Optional, Tuple, Union
 import logging
 
-from src.core.structural_tensor import structural_tensor, sampling_structural_tensor
-from src.optimization.optimization import Optimization, filter_lo_around_c
-from src.core.pclines_parallel_coordinates import pclines_local_orientation_filtering
-from src.optimization.line_intersection_solver import LeastSquaresSolution
+from src.geometry.structural_tensor import structural_tensor, sampling_structural_tensor
+from src.optimization.optimizer import Optimization
+from src.optimization.optimization_utils import filter_lo_around_c
+from src.geometry.line_transformations import pclines_local_orientation_filtering
+from src.optimization.least_squares_solver import LeastSquaresSolution
 
 logger = logging.getLogger(__name__)
 

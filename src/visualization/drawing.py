@@ -2,9 +2,8 @@ import numpy as np
 import cv2
 from typing import Tuple, Optional, List
 
-from src.geometry.primitives import Line
 from src.visualization.color import Color
-from src.utils.image import (
+from src.processing.image_processing import (
     resize_image_using_pil_lib,
     compute_intersection_with_block_boundaries,
 )

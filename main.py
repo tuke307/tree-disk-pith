@@ -9,8 +9,8 @@ import numpy as np
 import pandas as pd
 
 from src.visualization.color import Color
-from src.utils.image import resize_image_using_pil_lib
-from src.detection.pith_detector import apd, apd_pcl, apd_dl
+from src.processing.image_processing import resize_image_using_pil_lib
+from src.detection.pith_detection import apd, apd_pcl, apd_dl
 from src.utils.file_utils import clear_dir
 
 logger = logging.getLogger(__name__)
